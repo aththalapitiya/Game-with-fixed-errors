@@ -1,0 +1,716 @@
+/* Import Kablammo Font */
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+
+/* General Page Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kablammo', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Background Image */
+.background {
+    background: url('/peel-n-catch-game/assets/images/background1.png') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+/* Power & Speaker Icons */
+.power-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    cursor: pointer;
+}
+
+/* .speaker-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50%;
+    cursor: pointer;
+} */
+
+/* ----- SIGNUP & SIGNIN PAGE STYLES ----- */
+
+/* Shared Form Styles */
+.signup-container{
+    background: rgba(62, 71, 74, 0.92);
+    padding: 40px;
+    border-radius: 35px;
+    text-align: center;
+    width: 550px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+.signin-container {
+    background: rgba(62, 71, 74, 0.92);
+    padding: 40px;
+    border-radius: 35px;
+    text-align: center;
+    width: 550px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+
+/* Form Input Fields */
+input {
+    width: 90%;
+    height: 55px;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+    background: #a0a04e;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+/* Labels */
+label {
+    display: block;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Button Styling */
+.signup-button {
+    width: 200px; /* Make it take full width of the container */
+    height: 60px;
+    background: url('/peel-n-catch-game/assets/images/SIGNUPButton.png') no-repeat center;
+    background-color: #FFD700; /* Yellow background */
+    color: white;              /* White text */
+    padding: 15px 30px;        /* Padding around the text */
+    border-radius: 15px;       /* Rounded corners */
+    border: none;              /* Remove the default border */
+    font-size: 18px;           /* Text size */
+    font-weight: bold;         /* Make the text bold */
+    cursor: pointer;          /* Cursor changes to pointer on hover */
+    text-align: center;        /* Center text */
+    display: inline-block;     /* Make the button inline */
+    text-decoration: none;     /* Remove the underline from the text */
+}
+
+.signup-button:hover {
+    opacity: 0.8;
+    background-color: #FFCC00; /* Darker yellow when hovered */
+}
+
+
+/* Sign-In Button */
+.signin-button {
+    width: 200px;
+    height: 60px;
+    background: url('/peel-n-catch-game/assets/images/SIGNINButton.png') no-repeat center;
+    background-color: #FFD700; /* Yellow background */
+    color: white;              /* White text */
+    padding: 15px 30px;        /* Padding around the text */
+    border-radius: 15px;       /* Rounded corners */
+    border: none;              /* Remove the default border */
+    font-size: 18px;           /* Text size */
+    font-weight: bold;         /* Make the text bold */
+    cursor: pointer;          /* Cursor changes to pointer on hover */
+    text-align: center;        /* Center text */
+    display: inline-block;     /* Make the button inline */
+    text-decoration: none;     /* Remove the underline from the text */
+}
+
+.signin-button:hover {
+    opacity: 0.8;
+    background-color: #FFCC00; /* Darker yellow when hovered */
+}
+
+/* Sign-in / Sign-up Text */
+.signin-text,
+.signup-text {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.signin-text a,
+.signup-text a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.signin-text a:hover,
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* ----- HOW-TO-PLAY STYLES ----- */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.how-to-play-header {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+}
+
+.instruction-box {
+    background-color: transparent;  /* Remove the white background */
+    color: #000;  /* Ensure the text is visible */
+    padding: 20px;  /* Add some padding to the box */
+    font-family: 'Kavoon', cursive;/* You can use any font you prefer */
+    line-height: 2.0;  /* Adds some space between lines */
+    font-size: 22px; 
+    position: relative;
+    z-index: 2; /* Make sure the text is readable */
+}
+
+.instruction-box p {
+    margin-bottom: 15px;  /* Space between paragraphs */
+    text-align: left;  
+    font-size: 20px;/* Ensure the text is aligned left */
+}
+
+/* Monkey leaderboard */
+.howtoplay-monkey {
+    position: absolute;
+    bottom: -50px;
+    right: 0.5px;
+    width: 800px;
+    z-index: 1;
+}
+
+/* Instruction Box */
+.instruction-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 35px;
+    backdrop-filter: blur(8px);
+    background: rgba(62, 71, 74, 0.92);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+/* Note Image */
+.note-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* ----- LEADERBOARD STYLES ----- */
+.leaderboard-container {
+    background: rgba(62, 71, 74, 0.92);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 35px;
+    text-align: center;
+    width: 600px;
+    height: 450px;
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Leaderboard Title */
+.leaderboard-title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+th {
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* User Rank & Score */
+.user-rank, .user-score {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+}
+
+.wooden-plank-left, .wooden-plank-right {
+    background-image: url('/peel-n-catch-game/assets/images/plank.png'); /* Use the path to your wooden plank image */
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kavoon', cursive;
+    font-weight: bold;
+    color: white;
+    font-size: 26px;
+}
+
+.wooden-plank-left {
+    margin-right: 10px;
+}
+
+.wooden-plank-right {
+    margin-left: 10px;
+}
+
+/* Monkey leaderboard */
+.leaderboard-monkey {
+    position: absolute;
+    top: 40px;
+    right: 270px;
+    width: 700px;
+    z-index: 1;
+}
+
+/* ----- LOBBY PAGE STYLES ----- */
+
+.lobby-container{
+    background: rgba(62, 71, 74, 0.92);
+    padding: 40px;
+    border-radius: 35px;
+    color: #FFD700;
+    text-align: center;
+    width: 550px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    z-index: 5;
+}
+
+/* Game Title */
+.game-title {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    z-index: 10;
+}
+
+/* Navigation Buttons */
+.button-group {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Lobby Buttons */
+.lobby-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 60px;
+    background: #a0a04e;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Kavoon', cursive;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 3px solid white;
+    transition: 0.3s;
+}
+
+.lobby-button:hover {
+    background: #ffcc00;
+}
+
+/* Monkey Character */
+.monkey-character {
+    position: absolute;
+    bottom: -10px;
+    right: -20px;
+    width: 800px;
+    z-index: 10;
+}
+
+/* ----- GAME SCREEN BUTTONS ----- */
+.sound-btn, .back-btn {
+    position: absolute;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.sound-btn {
+    background-image: url('../assets/images/speaker.png');
+    top: 10px;
+    right: 10px;
+}
+
+.back-btn {
+    background-image: url('../assets/images/back.png');
+    top: 10px;
+    left: 10px;
+}
+
+/* Right Panel Styling */
+.right-panel {
+    position: absolute;
+    top: 30px;  /* Top padding */
+    right: 25px;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Left panel positioning */
+.left-panel {
+    width: 55%;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Makes the background transparent so it doesn't overlap with pink board */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+
+/* Image container for API image */
+#image-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;  /* Add spacing below image */
+}
+
+/* API Image style */
+#imgApi {
+    width: 100%;
+    max-width: 600px;  /* Optional max-width for better size control */
+    height: auto;
+    border-radius: 20px;  /* Optional rounding of image corners */
+}
+
+/* Timer Container */
+#timer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kavoon', cursive;
+    margin-top: 20px;
+}
+
+/* Timer Text */
+.timer-text {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Timer Number */
+.timer-number {
+    font-size: 2rem;
+    margin-left: 10px;
+    color: white;
+}
+
+/* Input Container for the "Enter the missing digit" text, input, and submit button */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Input field styling */
+#answerInput {
+    width: 50%;                /* Make the input field take half of the container's width */
+    height: 40px;              /* Adjust height for better visibility */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    margin-right: 10px;        /* Space between the input and the button */
+}
+
+/* Submit Button styling */
+#submitAnswer {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #da5d72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;               /* Button width adjusts automatically */
+}
+
+
+
+/* Styling for the game title and equation area */
+#equation-box {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.score, .timer {
+    margin: 5px;
+}
+
+/* Game Monkey Image at Bottom */
+.game-monkey-image {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    width: 120px;
+    height: auto;
+}
+
+/* Score Container Above the Pink Board */
+.score-container {
+    position: absolute;
+    top: 10px; /* Move the score up above the pink board */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Kavoon', cursive;
+    z-index: 10; /* Ensure score is above the pink board */
+    font-size: 28px;
+    color: white;
+}
+
+/* Heart icons */
+.heart {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    gap: 10px;
+}
+
+.heart img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Speaker button styling */
+.speaker-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+/* Back button styling */
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 120px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Container for game area */
+.game-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Time Left Section */
+.timer {
+    display: flex;  /* Display text and number in a row */
+    align-items: center;  /* Align text and number vertically */
+    justify-content: center;  /* Center the content */
+    font-family: 'Kavoon', cursive;  /* Set the Kavoon font */
+    font-size: 1.5rem;  /* Adjust font size as needed */
+    color: white;  /* Make the text white */
+}
+
+.timer span {
+    font-size: 2rem;  /* You can increase the size of the time itself */
+    margin-left: 10px;  /* Space between the text and the time */
+}
+
+/* Pink Board Styles */
+#board {
+    width: 540px;
+    height: 540px;
+            /*background-color: #da5d72;*/
+    margin-top: 12%;
+    margin-bottom: 40px;
+    margin-left: 15%; /* Add margin to separate it from the top */
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /*flex-direction: column;*/
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+
+
+    background: url('/peel-n-catch-game/assets/images/sky.png');
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+/* Play Banana Image */
+.play-banana-image {
+    position: absolute;
+    bottom: 0;  /* Position the image at the bottom of the panel */
+    left: 20%;  /* Center the image horizontally */
+    transform: translateX(-50%); /* Adjust the image to be centered */
+    width: 850px;  /* Adjust width as needed */
+    z-index: 0; /* Ensure the image stays at the back of the content */
+}
+
+/* General game container for left panel */
+.left-panel {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#board div{
+    width: 180px;                               /*board divided into 3x3 tiles, so 180x180 per a one div */
+    height: 180px;
+    background-image: url('/peel-n-catch-game/assets/images/pipe.png');
+    background-size: cover;
+    position: relative;
+}
+
+#board div img {                        /* all img tags inside the tile div tags */
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/*lobby banana*/
+#banana-character {
+    position: absolute;
+    left: 30%; /* Move to the left of the panel */
+    bottom: 10px; /* Adjust the position as needed */
+    z-index: -1; /* Ensure it stays behind the board */
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+
